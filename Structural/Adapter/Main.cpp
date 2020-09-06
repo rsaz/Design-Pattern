@@ -18,8 +18,7 @@ int main()
     std::cout << "Client: Adaptee class has weird interface. Needs to be organized before use it\n";
     std::cout << "Adaptee-> " << adaptee->SpecificRequest() << std::endl;
     std::cout << std::endl;
-
-std:
+    
     std::cout << "Client-> But I can work with it via the adapter class created\n";
     auto *adapter = new Adapter{adaptee};
     ClientCode(adapter);
